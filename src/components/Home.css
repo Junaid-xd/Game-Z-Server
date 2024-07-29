@@ -1,0 +1,221 @@
+
+body{
+  margin: 0;
+  background-color:rgb(234, 206, 169);
+}
+
+
+.top-page-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  margin-top: 5vmax;
+  margin-bottom: 5vmax;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-bar-bottom{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 8px;
+}
+
+
+.players-table-wrapper,
+.questions-table-wrapper{
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 0px 5px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: antiquewhite;
+}
+
+
+
+.players-table,
+.questions-table{
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgb(105, 103, 103);
+}
+
+.questions-table{
+  border-spacing: 1px 2px;
+}
+
+.players-table-row{
+  border: 2px solid black;
+}
+
+.questions-table-head,
+.players-table-head{
+  background-color:rgb(179, 167, 152);
+  color: black;
+  font-size: 10px;
+}
+
+.questions-table-body,
+.players-table-body{
+  font-size: 10px;
+}
+
+tr{
+  background-color: rgb(212, 204, 204);
+}
+td{
+  padding: 5px 2px;
+}
+.questions-table td:nth-child(5){
+  color: rgb(212, 204, 204);
+}
+
+.players-table td:nth-child(6){
+  color: rgb(212, 204, 204);
+} 
+
+
+.questions-table td:nth-child(5):hover,
+.players-table td:nth-child(6):hover{
+  
+  color: black;
+}
+
+.heading-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(9, 98, 187);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.delete-question-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column  ;
+  margin: 10px 0px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(233, 186, 186);
+
+}
+
+.delete-question-form-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.delete-question-btn{
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.delete-question-btn:active{
+  background-color: black;
+}
+
+.delete-question-msg-div,
+.delete-user-msg-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: darkblue;
+  margin-top: 10px;
+}
+
+
+.question-id-input-ele,
+.user-id-input-ele{
+  font-size: 10px;
+  width: 18vmax;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5%;
+}
+
+.radio-div{
+  margin-top: 13px;
+}
+
+.create-btn-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.create-btn{
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 0px;
+  width: 30%;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.create-btn:active{
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+
+
+.error-msg-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.new-question-popup-form{
+  border: 2px solid black;
+  background-color: bisque;
+  border-radius: 10px;
+}
