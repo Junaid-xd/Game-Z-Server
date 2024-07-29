@@ -57,12 +57,12 @@ body{
 .players-table-head{
   background-color:rgb(179, 167, 152);
   color: black;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .questions-table-body,
 .players-table-body{
-  font-size: 10px;
+  font-size: 9px;
 }
 
 tr{
