@@ -379,11 +379,11 @@ function Home() {
                 <thead className='players-table-head'>
                   <tr className='players-table-head'>
                     <th>ID</th>
-                    <th>Username</th>
+                    <th>Name</th>
                     <th>Aura</th>
-                    <th>Correct</th>
-                    <th>Attempts</th>
-                    <th>Password</th>
+                    <th>Right</th>
+                    <th>Tried</th>
+                    <th>Pass</th>
                   </tr>
                 </thead>
 
