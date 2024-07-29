@@ -316,7 +316,7 @@ function Home() {
         const data = await response.json();
   
         if(response.ok){
-          document.querySelector('.delete-user-msg-div').innerHTML = "Question Deleted Successfully!";
+          document.querySelector('.delete-user-msg-div').innerHTML = "User Deleted Successfully!";
 
           setTimeout(()=>{
             document.querySelector('.delete-user-msg-div').innerHTML = "";
