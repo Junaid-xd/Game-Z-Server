@@ -43,7 +43,7 @@ function Home() {
 
     fetchData();   
 
-    setInterval(fetchData, 5000);
+    setInterval(fetchData, 2000);
 
   }, []);
 
@@ -62,7 +62,7 @@ function Home() {
 
     fetchData();
 
-    setInterval(fetchData, 15000);
+    setInterval(fetchData, 2000);
 
   }, []);
 
@@ -176,7 +176,7 @@ function Home() {
 
   const createQuestion = ()=>{
 
-    const question = document.querySelector('.form-input-question-ele').value
+    const question = document.querySelector('.form-input-question-ele').value;
     const answerToLowerCase = document.querySelector('.form-input-answer-ele').value.toLowerCase();
 
     if(question!="" && answerToLowerCase!=""){
@@ -241,25 +241,28 @@ function Home() {
                   'Content-Type': 'application/json'
               },
               body: JSON.stringify(newQuestion)
+            })
+            .then(() =>{
+              document.querySelector('.error-msg-div').innerHTML = "";
+              document.querySelector('.error-msg-div').innerHTML = "Question Created Successfully";
+      
+              setTimeout(()=>{
+                document.querySelector('.error-msg-div').innerHTML = "";
+              },3000)
+
             });
         
-            const result = await send.json();
 
-            if(send.ok){
-              setShowCreateNewQuestionPopup(false);
-              setSuccessMessage("Question created Successfully");
-              setEmergencyPopupNote("Note: You can not answer the questions that are created by you.");
-              setShowEmergencyPopup(true);
-
-              document.querySelector('.form-input-question-ele').value = "";
-              document.querySelector('.form-input-answer-ele').value = "";
-            }
             
+            
+            document.querySelector('.form-input-question-ele').value = "";
+            document.querySelector('.form-input-answer-ele').value = "";
+
+            console.log("G");
             
 
           }catch(error){
-            setFailedMessage("An error occured")
-            setShowEmergencyPopup(true);
+            console.log("Error in creating question: ", error);
           }
 
 
@@ -274,10 +277,6 @@ function Home() {
         //===============================================================
 
 
-
-
-    
-        console.log("New Question : ", newQuestion);
       }
     }
     else{
