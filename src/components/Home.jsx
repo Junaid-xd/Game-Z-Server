@@ -257,8 +257,8 @@ function Home() {
             
             document.querySelector('.form-input-question-ele').value = "";
             document.querySelector('.form-input-answer-ele').value = "";
+            document.querySelector('.form-input-hint-ele').value = "";
 
-            console.log("G");
             
 
           }catch(error){
